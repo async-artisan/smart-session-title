@@ -1,0 +1,59 @@
+{
+  "scenario": "一个英文实质需求后连续两次纯确认；合成宿主，真实独立 Luna 调用",
+  "seconds": 11.61,
+  "results": [
+    {
+      "status": "renamed",
+      "action": "rename",
+      "title": "🧩 Email verification codes｜Fix signup expiry",
+      "reason": "原标题无主线信息，按英文需求明确对象与目标",
+      "usage": {
+        "input_tokens": 4717,
+        "cached_input_tokens": 3840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100,
+        "reasoning_output_tokens": 54
+      },
+      "verification": "metadata_only"
+    },
+    {
+      "status": "kept",
+      "action": "keep",
+      "title": "🧩 Email verification codes｜Fix signup expiry",
+      "reason": "新增内容仅为确认，保留稳定标题",
+      "usage": {},
+      "skip_reason": "confirmation_only"
+    },
+    {
+      "status": "kept",
+      "action": "keep",
+      "title": "🧩 Email verification codes｜Fix signup expiry",
+      "reason": "新增内容仅为确认，保留稳定标题",
+      "usage": {},
+      "skip_reason": "confirmation_only"
+    }
+  ],
+  "ledger": {
+    "groups": [
+      {
+        "purpose": "naming",
+        "model": "gpt-5.6-luna",
+        "attempts": 1,
+        "unknown_usage": 0,
+        "tokens": {
+          "input_tokens": 4717,
+          "cached_input_tokens": 3840,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 100,
+          "reasoning_output_tokens": 54
+        },
+        "outcomes": {
+          "renamed": 1
+        }
+      }
+    ],
+    "unreadable_records": 0,
+    "confirmation_skips_in_retained_logs": 2,
+    "notice": "仅统计启用账本后的独立模型调用；不含宿主管理模型、历史日志或未记账的独立评测。缓存输入包含在输入中，推理输出包含在输出中；未知用量不按零计算。"
+  }
+}

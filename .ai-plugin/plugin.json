@@ -1,0 +1,18 @@
+{
+  "name": "smart-session-title",
+  "version": "1.0.0",
+  "description": "在每轮对话结束后，用独立模型按用户的主要交流语言维护稳定的 emoji 话题标题。",
+  "author": {
+    "name": "yesgooo"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI对话标题自动生成",
+    "shortDescription": "让 AI助手 对话标题跟上讨论内容",
+    "longDescription": "每轮结束后在后台检查最近几轮对话，用独立模型判断是否更新标题。固定类别 emoji，保护手动标题，避免重复改名；命名结果不追加到原话题。仅支持本地 AI助手，需单独信任 Stop Hook。",
+    "developerName": "yesgooo",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "检查 smart-session-title 的配置和 Hook 状态。"
+  }
+}
